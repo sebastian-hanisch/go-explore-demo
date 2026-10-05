@@ -1,5 +1,7 @@
 # Go-Explore – erst zurückkehren, dann erkunden (Streamlit-Demo)
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-go-explore-demo.streamlit.app/)**
+
 ---
 
 Interaktive Demo zu **Go-Explore**. **Neuntes Stück der Konzepte-Linie „Novelty Search und Quality-Diversity“** im Portfolio von
