@@ -2,7 +2,7 @@
 
   methods  je Stufe (0 bis 4) × Verfahren (GA mit Fitness, Novelty, Go-Explore mit kostenloser Rückkehr, Go-Explore mit Rückkehr durch Wiederabspielen) 20 Läufe im Budget von 5.6 Mio Schritten (40 000 Evaluationen):
            Schritte bis zum Erfolg (None = nie), Länge der gefundenen Fahrt (Go-Explore), berührte Zellen, kleinster Restweg; mittlerer Verlauf der Zellen und Anteil erfolgreicher Läufe je 100 000 Schritte
-  sweep    Stufe 3 und 4: Go-Explore (kostenlose Rückkehr) mit je einer geänderten Einstellung (Erkundungslänge, Zelle, Auswahl, Längenbegrenzung, Rückkehr), 20 Läufe
+  sweep    Stufe 3 und 4: Go-Explore (kostenlose Rückkehr) mit je einer geänderten Einstellung (Explorationslänge, Zelle, Auswahl, Längenbegrenzung, Rückkehr), 20 Läufe
   noise    Stufe 3 und 4: Go-Explore (Voreinstellung) in einer Welt mit Rauschen 0 / 0.02 / 0.05 / 0.1 Zellen je Schritt, 20 Läufe; Anteil der 200 Wiederholungen der gefundenen Fahrt ohne Zurücksetzen, die am Ende im Zielkreis stehen
   levels   exakte Täuschungsmaße der Stufen"""
 

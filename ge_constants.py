@@ -42,7 +42,7 @@ BASELINE_LABELS = {"fitness": "GA mit Fitness", "novelty": "Novelty Search"}
 
 # Einstellungen von Go-Explore
 N_EXPLORERS = 100                            # Erkunder je Runde (parallel)
-EXPLORE_OPTIONS = (3, 10, 40)                # zufällige Schritte je Erkundung
+EXPLORE_OPTIONS = (3, 10, 40)                # zufällige Schritte je Exploration
 DEFAULT_EXPLORE = 10
 CAP_OPTIONS = (140, 0)                       # Längenbegrenzung der Lösung (Schritte); 0 = keine
 CAP_LABELS = {140: "140 Schritte (wie die Genome)", 0: "keine"}

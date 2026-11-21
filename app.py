@@ -107,7 +107,7 @@ with st.sidebar:
     st.markdown("**Go-Explore**")
     ret = st.selectbox("Rückkehr", options=C.RETURNS, key="return_select", format_func=lambda v: C.RETURN_LABELS[v], help="Kostenlos: der Simulator wird zurückgesetzt. Wiederabspielen: die Schritte des Wegs zählen zum Budget.")
     cell = st.selectbox("Zelle", options=C.CELL_KINDS, key="cell_select", format_func=lambda v: C.CELL_LABELS[v], help="Wie fein das Archiv einteilt: gröbere Zellen haben weniger Einträge, feinere (mit Richtung) viel mehr.")
-    explore = st.selectbox("Erkunden mit … Schritten", options=C.EXPLORE_OPTIONS, key="explore_select", help="Zufällige Schritte je Erkundung nach der Rückkehr.")
+    explore = st.selectbox("Erkunden mit … Schritten", options=C.EXPLORE_OPTIONS, key="explore_select", help="Zufällige Schritte je Exploration nach der Rückkehr.")
     cap = st.selectbox("Längenbegrenzung der Fahrt", options=C.CAP_OPTIONS, key="cap_select", format_func=lambda v: C.CAP_LABELS[v], help="Höchstzahl der Schritte seit dem Start, bis zu der Zustände ins Archiv kommen.")
     select = st.selectbox("Auswahl der Zelle", options=C.SELECTS, key="select_select", format_func=lambda v: C.SELECT_LABELS[v])
     noise = st.select_slider("Rauschen im Entgleisungs-Experiment", options=C.NOISE_OPTIONS, key="noise_select", format_func=lambda v: f"{v:g}", help="Gauß-Rauschen auf der Verschiebung je Schritt (Zellen), wenn die gefundene Fahrt ohne Zurücksetzen wiederholt wird (Abschnitt unter dem Lauf).")
@@ -196,7 +196,7 @@ st.markdown("---")
 st.subheader("🔬 Löst das die Falle? Die Studie über 20 Läufe")
 st.markdown(
     f"Je Stufe und Verfahren {N} Läufe mit unterschiedlichem Seed, jeweils mit höchstens {C.fmt_int(PRE['budget'])} simulierten Schritten ({C.fmt_int(PRE['budget'] // C.STEPS)} Evaluationen von 140 Schritten). Go-Explore mit Voreinstellung "
-    "(Zelle 1 × 1, 10 Erkundungsschritte, Zählerauswahl, Längenbegrenzung 140), einmal mit kostenloser Rückkehr und einmal mit Wiederabspielen."
+    "(Zelle 1 × 1, 10 Explorationsschritte, Zählerauswahl, Längenbegrenzung 140), einmal mit kostenloser Rückkehr und einmal mit Wiederabspielen."
 )
 col_g, col_h = st.columns(2)
 with col_g:
